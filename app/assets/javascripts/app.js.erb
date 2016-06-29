@@ -1,0 +1,12 @@
+window.onload = function() {
+  var alfabet="abcdefghijklmnopqrstuvwxyz";
+  var str = gon.str.toLowerCase();
+  var i=0;
+  while (i<26){
+    var count = (str.split(alfabet[i]).length - 1)
+    var x = count*100/str.length
+    $('#a'+i).css('height', x+18 );
+    $('#col'+i).html(alfabet[i]+':'+count);
+    i+=1;
+  }
+}

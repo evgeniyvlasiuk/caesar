@@ -1,0 +1,77 @@
+<div class="mainForm">
+  <%= form_tag("/encode", method: "post") do %>
+    <div class="pole text">
+       <h3>Enter your text</h3>
+       <%= text_area  :text, value: @text%>
+    </div>
+      <div class="pole rot">
+        <h4>Your key</h4>
+        <%= text_field :key, value: @key %>
+        <p>
+          <%= submit_tag 'Encode', class: "btn  btn-inverse" %>
+          <%= submit_tag 'Decode', class: "btn  btn-inverse"%>
+        </p>
+      </div>
+      <div class="pole textOut">
+        <h3>Result :</h3>
+        <div class="poleOut"><%=@textout %></div>
+      </div>
+  <% end %>
+  <div class="diagram">
+    <figure><figcaption id="a0">a</figcaption></figure>
+    <figure><figcaption id="a1">b</figcaption></figure>
+    <figure><figcaption id="a2">c</figcaption></figure>
+    <figure><figcaption id="a3">d</figcaption></figure>
+    <figure><figcaption id="a4">e</figcaption></figure>
+    <figure><figcaption id="a5">f</figcaption></figure>
+    <figure><figcaption id="a6">g</figcaption></figure>
+    <figure><figcaption id="a7">h</figcaption></figure>
+    <figure><figcaption id="a8">i</figcaption></figure>
+    <figure><figcaption id="a9">j</figcaption></figure>
+    <figure><figcaption id="a10">k</figcaption></figure>
+    <figure><figcaption id="a11">l</figcaption></figure>
+    <figure><figcaption id="a12">m</figcaption></figure>
+    <figure><figcaption id="a13">n</figcaption></figure>
+    <figure><figcaption id="a14">o</figcaption></figure>
+    <figure><figcaption id="a15">p</figcaption></figure>
+    <figure><figcaption id="a16">q</figcaption></figure>
+    <figure><figcaption id="a17">r</figcaption></figure>
+    <figure><figcaption id="a18">s</figcaption></figure>
+    <figure><figcaption id="a19">t</figcaption></figure>
+    <figure><figcaption id="a20">u</figcaption></figure>
+    <figure><figcaption id="a21">v</figcaption></figure>
+    <figure><figcaption id="a22">w</figcaption></figure>
+    <figure><figcaption id="a23">x</figcaption></figure>
+    <figure><figcaption id="a24">y</figcaption></figure>
+    <figure><figcaption id="a25">z</figcaption></figure>
+    <figure><figcaption id="end"></figcaption></figure>
+  </div>
+  <div class="count">
+    <p id="col0"></p>
+    <p id="col1"></p>
+    <p id="col2"></p>
+    <p id="col3"></p>
+    <p id="col4"></p>
+    <p id="col5"></p>
+    <p id="col6"></p>
+    <p id="col7"></p>
+    <p id="col8"></p>
+    <p id="col9"></p>
+    <p id="col10"></p>
+    <p id="col11"></p>
+    <p id="col12"></p>
+    <p id="col13"></p>
+    <p id="col14"></p>
+    <p id="col15"></p>
+    <p id="col16"></p>
+    <p id="col17"></p>
+    <p id="col18"></p>
+    <p id="col19"></p>
+    <p id="col20"></p>
+    <p id="col21"></p>
+    <p id="col22"></p>
+    <p id="col23"></p>
+    <p id="col24"></p>
+    <p id="col25"></p>
+  </div>
+</div>
