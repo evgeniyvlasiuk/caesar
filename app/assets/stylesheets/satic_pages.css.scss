@@ -78,7 +78,7 @@ body {
     text-align: center;
     padding-top: 0;
     figcaption{
-      vertical-align:bottom; /* вот она */
+      vertical-align:bottom; /* прижали к низу дочернего элемента */
       display:inline-block;
       width: 15px;
       height: 18px;

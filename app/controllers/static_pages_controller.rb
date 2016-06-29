@@ -3,8 +3,8 @@ class StaticPagesController < ApplicationController
 
   end
 
-  def encode #метод вызываемый нажатием кнопок
-    str = params["text"]["{:value=>nil}"] #параметры с формы
+  def encode                                      #метод, вызываемый нажатием кнопок
+    str = params["text"]["{:value=>nil}"]         #присвоить переменной параметр с формы
     key = params["key"]["{:value=>nil}"].to_i
     if params[:commit] === "Decode"
       key=key*-1
@@ -28,8 +28,8 @@ class StaticPagesController < ApplicationController
       res << b.chr
     end
     @textout = res
-    gon.str=str
-    respond_to do |format|
+    gon.str=str                 #присваиваем gon переменную для работы в js файле(использую gem "gon")
+    respond_to do |format|      #возврат формата json
       format.json {render :json => @textout}
       format.html {render 'home'}
     end

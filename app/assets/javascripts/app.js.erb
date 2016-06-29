@@ -1,12 +1,12 @@
 window.onload = function() {
   var alfabet="abcdefghijklmnopqrstuvwxyz";
-  var str = gon.str.toLowerCase();
+  var str = gon.str.toLowerCase();                //получил переменную из controller с помощью gem "gon"
   var i=0;
   while (i<26){
-    var count = (str.split(alfabet[i]).length - 1)
-    var x = count*100/str.length
-    $('#a'+i).css('height', x+18 );
-    $('#col'+i).html(alfabet[i]+':'+count);
+    var count = (str.split(alfabet[i]).length - 1)//числовое вхождение символов
+    var x = count*100/str.length                  //процентное вхождение символов
+    $('#a'+i).css('height', x+18 );               //изменение css свойств элемента c id "a[i]"
+    $('#col'+i).html(alfabet[i]+':'+count);       //изменение html свойств элемента с id "col[i]"
     i+=1;
   }
 }
